@@ -1,8 +1,10 @@
-const createGame = document.querySelector("#createRoom");
-const exitGame = document.querySelector("#exitGame");
+const createGame = document.querySelector(".header");
+const joinGame = document.querySelector(".card");
 
 let createRoom = () => {
-  createGame.addEventListener("click", () => {});
+  createGame.addEventListener("click", () => {
+    console.log("ajmo");
+  });
 };
 
 createRoom();
