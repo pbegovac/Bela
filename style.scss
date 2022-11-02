@@ -12,6 +12,7 @@ $background-color: #ede9e8;
   background-color: $background-color;
 }
 
+//index.html
 .gameSheet {
   @include flexCenter;
   flex-direction: column;
@@ -37,5 +38,25 @@ $background-color: #ede9e8;
     &:hover {
       transform: scale(1.02);
     }
+  }
+}
+
+//table.html
+
+.body {
+  @include flexCenter;
+  flex-direction: column;
+  height: 100vh;
+  .players {
+    width: 500px;
+    height: 50px;
+    background-color: #d4afa5;
+    margin: 10px;
+  }
+
+  a {
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
   }
 }
