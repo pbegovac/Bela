@@ -9,13 +9,23 @@
     <link rel="icon" href="./icon.png" />
   </head>
   <body>
-    <form action="" method="post" id="form">
-      <label for="name"> Nickname: </label>
-      <input type="text" id="name" required />
-    </form>
-    <div class="gameSheet">
-      <div class="header"></div>
-      <div class="card"></div>
+    <div class="firstPage">
+      <form action="" method="post" id="form">
+        <label for="name"></label>
+        <input type="text" id="nickname" required />
+        <input type="submit" id="submit" value="Set Nickname" />
+      </form>
+      <div class="gameSheet">
+        <div class="playColors"></div>
+        <div class="card"></div>
+      </div>
+    </div>
+    <div class="body">
+      <div class="players"><p id="player1"></p></div>
+      <div class="players"><p id="player2"></p></div>
+      <div class="players"><p id="player3"></p></div>
+      <div class="players"><p id="player4"></p></div>
+      <p class="leaveGame"><a href="index.html">Leave game</a></p>
     </div>
   </body>
   <script src="./pregame.js"></script>

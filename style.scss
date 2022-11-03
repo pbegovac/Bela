@@ -13,30 +13,59 @@ $background-color: #ede9e8;
 }
 
 //index.html
-.gameSheet {
+.firstPage {
   @include flexCenter;
   flex-direction: column;
   height: 100vh;
-  .header {
-    @include flexCenter;
-    height: 17%;
-    width: 50%;
-    background: url("./icons.png");
-    background-size: 100% 100%;
+  #nickname {
+    box-sizing: border-box;
+    padding: 5px;
+    border: none;
+    border-bottom: 1px solid #d6d2db;
+    background-color: #ffffff;
+    outline: none;
+    border-radius: 4px;
+  }
+  #submit {
+    height: 30px;
+    width: 100px;
     cursor: pointer;
-    &:hover {
-      transform: scale(1.02);
+    border: none;
+    margin-right: 20px;
+    background-color: #8288ae;
+    border-radius: 2px;
+    color: #efede5;
+    :hover {
+      border-radius: 5px;
+      transform: scale(1.1);
     }
   }
-  .card {
-    width: 15%;
-    height: 55%;
-    margin: 10px;
-    background: url(./karta.jpg);
-    background-size: 100% 100%;
-    cursor: pointer;
-    &:hover {
-      transform: scale(1.02);
+  .gameSheet {
+    @include flexCenter;
+    flex-direction: column;
+    height: 90%;
+    width: 100%;
+    .header {
+      @include flexCenter;
+      height: 17%;
+      width: 50%;
+      background: url("./icons.png");
+      background-size: 100% 100%;
+      cursor: pointer;
+      &:hover {
+        transform: scale(1.02);
+      }
+    }
+    .card {
+      width: 15%;
+      height: 55%;
+      margin: 10px;
+      background: url(./karta.jpg);
+      background-size: 100% 100%;
+      cursor: pointer;
+      &:hover {
+        transform: scale(1.02);
+      }
     }
   }
 }
@@ -48,10 +77,15 @@ $background-color: #ede9e8;
   flex-direction: column;
   height: 100vh;
   .players {
+    @include flexCenter;
     width: 500px;
     height: 50px;
     background-color: #d4afa5;
     margin: 10px;
+    p {
+      @include flexCenter;
+      background-color: #d4afa5;
+    }
   }
 
   a {
