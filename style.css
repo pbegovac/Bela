@@ -68,7 +68,7 @@
   width: 100%;
 }
 
-.firstPage .gameSheet .header {
+.firstPage .gameSheet .playColors {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -85,7 +85,7 @@
   cursor: pointer;
 }
 
-.firstPage .gameSheet .header:hover {
+.firstPage .gameSheet .playColors:hover {
   -webkit-transform: scale(1.02);
           transform: scale(1.02);
 }
@@ -150,9 +150,21 @@
   background-color: #d4afa5;
 }
 
-.body a {
-  text-decoration: none;
-  color: black;
+.body .leaveGame {
+  height: 30px;
+  width: 100px;
   cursor: pointer;
+  border: none;
+  margin-right: 20px;
+  background-color: #8288ae;
+  border-radius: 2px;
+  color: #efede5;
+}
+
+.body .leaveGame a {
+  text-decoration: none;
+  color: #efede5;
+  cursor: pointer;
+  background-color: #8288ae;
 }
 /*# sourceMappingURL=style.css.map */

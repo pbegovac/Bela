@@ -4,6 +4,17 @@
   align-items: center;
 }
 
+@mixin buttons {
+  height: 30px;
+  width: 100px;
+  cursor: pointer;
+  border: none;
+  margin-right: 20px;
+  background-color: #8288ae;
+  border-radius: 2px;
+  color: #efede5;
+}
+
 $background-color: #ede9e8;
 
 * {
@@ -12,7 +23,7 @@ $background-color: #ede9e8;
   background-color: $background-color;
 }
 
-//index.html
+//selectRoom
 .firstPage {
   @include flexCenter;
   flex-direction: column;
@@ -27,14 +38,7 @@ $background-color: #ede9e8;
     border-radius: 4px;
   }
   #submit {
-    height: 30px;
-    width: 100px;
-    cursor: pointer;
-    border: none;
-    margin-right: 20px;
-    background-color: #8288ae;
-    border-radius: 2px;
-    color: #efede5;
+    @include buttons;
     :hover {
       border-radius: 5px;
       transform: scale(1.1);
@@ -45,7 +49,7 @@ $background-color: #ede9e8;
     flex-direction: column;
     height: 90%;
     width: 100%;
-    .header {
+    .playColors {
       @include flexCenter;
       height: 17%;
       width: 50%;
@@ -70,8 +74,7 @@ $background-color: #ede9e8;
   }
 }
 
-//table.html
-
+//Room
 .body {
   @include flexCenter;
   flex-direction: column;
@@ -87,10 +90,13 @@ $background-color: #ede9e8;
       background-color: #d4afa5;
     }
   }
-
-  a {
-    text-decoration: none;
-    color: black;
-    cursor: pointer;
+  .leaveGame {
+    @include buttons;
+    a {
+      text-decoration: none;
+      color: #efede5;
+      cursor: pointer;
+      background-color: #8288ae;
+    }
   }
 }
